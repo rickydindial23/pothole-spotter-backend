@@ -1,5 +1,5 @@
 <h1> Pothole Spotter App </h1>
-![App Logo](/SWE/logo.png)
+![App Logo](https://github.com/rickydindial23/pothole-spotter-backend/blob/main/SWE/logo.png)
 <h4> Developed by: DeadlineDelinquents </h4>
 
 <h2> Group Members: </h2>
