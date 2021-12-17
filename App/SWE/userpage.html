@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <center>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="script.js" defer></script>
+        <title>User Page</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+        <style>
+            body{
+                background-color: #616161;
+            }
+
+            html {
+                background-color:#8e8e8e;
+            }
+
+            body { 
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            *:focus{
+                outline: none;
+            }
+
+            .box{
+                box-sizing: border-box;
+                width: 360px;
+                height: 600px;
+                border: 2px solid white;
+                box-shadow: -3px -3px 7px #ffffff73,
+                            3px 3px 5px rgba(94,104,121,0.288);
+                border-radius: 5px;
+                background-color: #8e8e8e;
+                margin-top: 50px;
+                overflow: hidden;
+                justify-content: center;
+                -moz-box-align: center;
+            }
+
+            img{
+                box-sizing: border-box;
+                width: 149px;
+                height: 149px;
+                border-radius: 50%;
+                margin: 0;
+                border: 5px solid #dd2c00;
+                padding: 3px;
+                background-color: white;
+            }
+
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 45%;
+            }
+
+            input[type="text"],
+            input[type="email"]{
+                display: block;
+                box-sizing: border-box;
+                background-color: none;
+                color: black;
+                margin-bottom: 30px;
+                padding: 5px;
+                width: 220px;
+                height: 32px;
+                border: none;
+                border-bottom: 1px solid #dd2c00;
+                font-family: 'Cambria', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: 400;
+                font-size: 24px;
+                transition: 0.2 ease;
+            }
+
+
+            input[type="text"]:focus,
+            input[type="email"]:focus{
+                border-bottom: 1px solid #dd2c00;
+                border-bottom-right-radius: 20px;
+                color: black;
+                transition: 0,2 ease;
+            }
+
+            button{
+                border: 1px solid white;
+                background-color: #dd2c00;
+                color: white;
+                height: 30px;
+                width: 100px;
+                border-radius: 5px;
+                margin: 0px;
+                transition: all 0,3s;
+            }
+
+            button:hover{
+                transform: scale(1.2);
+            }
+
+            input[type="file"]{
+                display:none;
+            }
+
+            label{
+                box-sizing: border-box;
+                font-size: 20px;
+                background-color: #dd2c00;
+                color: white;
+                border: 1px solid white;
+                padding: 2px 15px;
+                border-radius: 5px;
+                transition: all 0.3s;
+            }
+
+            label:hover{
+                background-color: #dd2c00;
+                color: white;
+            }
+
+            .box:hover{
+                width: 360px;
+                height: 600px;
+                border-radius: 5px;
+            }
+        </style>
+        <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo-img">
+              <a href="file:///C:/Users/Christine/Desktop/SWE/homepage.html#">
+              <img src="logo.png" alt="logo" width="40%" height= "25%">
+            </a>
+            </div>
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                 <li><a href="homepage.html">HOME</a></li>
+                <li><a href="indexcamera.html">ADD POTHOLE</a></li>
+                <li><a href="reports.html">REPORTS</a></li>
+                <li><a href="userpage.html">USER PROFILE</a></li>
+                <li><a href="loginsignup.html">LOGOUT</a></li>
+              </ul>
+            </div>
+        </nav>
+        <div class="box">
+            <img src="profilepic.gif" class="center"></image>
+            <input type = "file" name="" id="file" accept="image/*">
+            <label for="file">EDIT PICTURE</label>
+            <input type="text" name="" placeholder="First Name">
+            <input type="text" name="" placeholder="Last Name">
+            <input type ="text" name= "" placeholder="Username">
+            <input type ="text" name="" placeholder="Password">
+
+
+            <button style="float: left; margin: 10px 0 0 18.2%;">CANCEL</button>
+            <button style="float: right; margin: 10px 18.2% 0 0;">FINISH</button>
+
+        </div>
+    </center> 
+    </body>
+</html>

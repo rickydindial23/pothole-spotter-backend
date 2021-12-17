@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pothole Map</title>
+    <style>
+        #map{
+            height: 500px;
+            width: 100%;
+            /*position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0px;
+            right: 0; */
+        }
+    </style>
+
+    <link rel="stylesheet" href="background_styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-img">
+          <a href="file:///C:/Users/Christine/Desktop/SWE/homepage.html#">
+          <img src="logo.png" alt="logo" width="40%" height= "25%">
+        </a>
+        </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="homepage.html">HOME</a></li>
+            <li><a href="indexcamera.html">ADD POTHOLE</a></li>
+            <li><a href="reports.html">REPORTS</a></li>
+            <li><a href="userpage.html">USER PROFILE</a></li>
+            <li><a href="loginsignup.html">LOGOUT</a></li>
+          </ul>
+        </div>
+    </nav>
+    <br>
+    <div id="map"></div>
+    <script>
+        function initMap(){
+            //Map options
+            var options = {
+                zoom: 9,
+                center: {lat: 10.6918, lng: -61.2225}
+            }
+            //New Map
+            var map = new google.maps.Map(document.getElementById('map'), options);
+
+            //Listen for click on map
+            google.maps.event.addListener(map, 'click', 
+            function(event){
+                addMarker({coords: event.latLng});
+            });
+
+
+            //Create array
+            var markers = [
+                {
+                    coords: {lat:10.513620, lng: -61.393033}
+                },
+                {
+                    coords: {lat:10.514157, lng: -61.401831}
+                },
+                {
+                    coords: {lat:10.549293, lng: -61.403966}
+                },
+                {
+                    coords: {lat:10.643025, lng: -61.225481}
+                },
+                {
+                    coords: {lat:10.389183, lng: -61.175356}
+                }
+            ];
+            
+            //Loop through markers array
+            for(var i=0; i<markers.length; i++){
+                addMarker(markers[i]);
+            }
+
+
+            //Add Marker function
+            function addMarker(properties){
+                //Add Pothole Markers
+                var marker = new google.maps.Marker({
+                    position: properties.coords,
+                    map: map,
+                    //icon: properties.iconImg
+                });
+
+                //check for custom icon
+                if(properties.iconImg){
+                    //set icon image
+                    marker.setIcon(properties.iconImg);
+                }
+                
+                if(properties.content){
+                    var infoWindow = new google.maps.InfoWindow({
+                        content: properties.content
+                    });
+                }
+                marker.addListener('click', function(){
+                    infoWindow.open(map, marker);
+                });
+            }
+
+
+
+        }
+    </script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvxy8V0QMtyof_rk_X4rhuZx8NnzoOGP0&callback=initMap">
+    </script>
+    
+</body>
+
+</html>
