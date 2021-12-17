@@ -11,4 +11,7 @@
 
 <h2> Project Description: </h2>
 <p> This project was created for our project assignment in our Year 3: COMP 3613 - Software Engineering II course </p>
-<p> The project was supposed to be </p>
+<p> The Pothole Spotter is an app developed to allow users to locate potholes across the country and suggest them to be placed on a map. This allow other users on the app to be aware of the status of these potholes, i.e whether they are fixed or not, and how bad it is. The user can also take a picture of the pothole they would like to upload for reference. </p>
+<p> When the user suggests a pothole location, the admins of the app can confirm or not whether the pothole is valid </p>
+<p> The admin can also remove potholes if they have been fixed </p>
+<p> The government authorities are also allowed to upload PDF reports about potholes on the app </p>
