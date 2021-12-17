@@ -1,5 +1,5 @@
 <h1> Pothole Spotter App </h1>
-![logo](https://user-images.githubusercontent.com/60653390/146615492-7f11a399-2feb-4a8d-817d-b8a45d33388f.png)
+!()
 <h4> Developed by: DeadlineDelinquents </h4>
 
 <h2> Group Members: </h2>
