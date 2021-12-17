@@ -1,8 +1,8 @@
 <h1> Pothole Spotter App </h1>
 <h6> Developed by: DeadlineDelinquents </h6>
 
-<h2> Group Members: <h2>
-<h6> Christine Ramdhanie - 816018588
+<h2> Group Members: </h2>
+<h6> Christine Ramdhanie - 816018588 
   
 Celeste Seegobin - 816019646
   
