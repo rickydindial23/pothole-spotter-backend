@@ -1,5 +1,5 @@
 <h1> Pothole Spotter App </h1>
-![App Logo] (../main/SWE/logo.png)
+<img src="SWE/logo.png">
 <h4> Developed by: DeadlineDelinquents </h4>
 
 <h2> Group Members: </h2>
