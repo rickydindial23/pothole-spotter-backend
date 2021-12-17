@@ -1,5 +1,5 @@
 <h1> Pothole Spotter App </h1>
-<h6> Developed by: DeadlineDelinquents </h6>
+<h4> Developed by: DeadlineDelinquents </h4>
 
 <h2> Group Members: </h2>
 <h6> Christine Ramdhanie - 816018588 </h6>
